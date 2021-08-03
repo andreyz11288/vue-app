@@ -1,16 +1,28 @@
 <template>
   <div id="app">
-    <ApartmentsList :items="apartments" />
+    <ApartmentsList :items="apartments">
+      <template v-slot:apartment="{ apartment }">
+        <ApartmentsItem
+          :key="apartment.id"
+          :descr="apartment.descr"
+          :rating="apartment.rating"
+          :price="apartment.price"
+          :imgSrc="apartment.imgUrl"
+        />
+      </template>
+    </ApartmentsList>
   </div>
 </template>
 
 <script>
 import ApartmentsList from './components/Apartments/ApartmentsList.vue'
+import ApartmentsItem from './components/Apartments/ApartmentsItem.vue'
 
 export default {
   name: 'App',
   components: {
     ApartmentsList,
+    ApartmentsItem,
   },
   data() {
     return {
