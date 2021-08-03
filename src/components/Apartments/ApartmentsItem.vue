@@ -71,6 +71,8 @@ export default {
   }
   &__description {
     margin-bottom: 20px;
+    height: calc(1em * 1.4 * 5);
+    overflow: hidden;
   }
 
   &__rating {
