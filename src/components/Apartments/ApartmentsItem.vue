@@ -36,7 +36,7 @@ export default {
     },
     imgSrc: {
       type: String,
-      default: '',
+      default: 'https://miro.medium.com/max/2000/1*cLQUX8jM2bMdwMcV2yXWYA.jpeg',
     },
   },
   methods:{

@@ -47,8 +47,8 @@ export default {
             phone: '115-355-5652',
             email: 'xegfrf,hf',
           },
-          imgUrl:
-            'https://miro.medium.com/max/2000/1*cLQUX8jM2bMdwMcV2yXWYA.jpeg',
+          // imgUrl:
+          //   'https://miro.medium.com/max/2000/1*cLQUX8jM2bMdwMcV2yXWYA.jpeg',
         },
         {
           id: '1jh174',
@@ -65,8 +65,8 @@ export default {
             phone: '115-355-5652',
             email: 'xegfrf,hf',
           },
-          imgUrl:
-            'https://miro.medium.com/max/2000/1*cLQUX8jM2bMdwMcV2yXWYA.jpeg',
+          // imgUrl:
+          //   'https://miro.medium.com/max/2000/1*cLQUX8jM2bMdwMcV2yXWYA.jpeg',
         },
       ],
     }
