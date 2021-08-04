@@ -1,8 +1,8 @@
 <template>
-  <li class="apartments-item">
+  <li class="apartments-item" @click="log">
     <div class="apartments-item__inner">
       <img :src="imgSrc" alt="" class="apartments-item__photo" />
-      <div class="apartments-item__content">
+      <div class="apartments-item__content" >
         <p class="apartments-item__description">{{ descr }}</p>
         <div class="apartments-item__rating">
           <StarRating :rating="rating" />
@@ -39,6 +39,11 @@ export default {
       default: '',
     },
   },
+  methods:{
+    log(event){
+      console.log(event);
+    }
+  }
 }
 </script>
 

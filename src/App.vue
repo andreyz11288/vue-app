@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <h1>{{text}}</h1>
+    <CustonInput v-model="text" />
     <ApartmentsList :items="apartments">
       <template v-slot:apartment="{ apartment }">
         <ApartmentsItem
@@ -17,15 +19,18 @@
 <script>
 import ApartmentsList from './components/Apartments/ApartmentsList.vue'
 import ApartmentsItem from './components/Apartments/ApartmentsItem.vue'
+import CustonInput from "./components/shared/CustonInput.vue";
 
 export default {
   name: 'App',
   components: {
     ApartmentsList,
     ApartmentsItem,
+    CustonInput,
   },
   data() {
     return {
+      text: '',
       apartments: [
         {
           id: '1jh144',
@@ -70,6 +75,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
